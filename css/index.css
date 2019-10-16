@@ -263,6 +263,37 @@ footer {
         padding: 3%;
     }
 }
+/* index page media query 800px above this line, Below this line is 500px */
+/* index page media query 800px above this line, Below this line is 500px */
+/* index page media query 800px above this line, Below this line is 500px */
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav a {
+        padding: 5%;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid grey;
+    }
+     #contactRef {
+        border-bottom: 1px solid grey;
+    }
+    .squareBoxed {
+        width: 100%;
+        height: auto;
+    }
+    .upperBodyText {
+        flex-direction: column;
+    }
+    .lowerBody {
+        flex-direction: column;
+    }
+}
+
 
 
 /* Underneath is the code for the Services.html page only */
