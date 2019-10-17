@@ -534,6 +534,13 @@ nav {
     .servicesTop {
         width: 100%;
         border: none;
+        margin-top: 2%;
+        padding: 0;
+        margin-top: 2%;
+    }
+    #largerText {
+        width: 100%;
+        text-align: center;
     }
     .textContainer {
         flex-direction: column;
@@ -555,7 +562,11 @@ nav {
     .bottomContainerText {
         width: 100%;
     }
-
-
+    .containerTotal {
+        border: none;
+    }
+    .contactRef {
+        border-bottom: 1px solid grey;
+    }
 }
 
