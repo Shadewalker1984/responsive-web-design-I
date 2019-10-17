@@ -1,3 +1,588 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+/* Your code starts here! */
+
+ .everything, .container { 
+	 max-width: 960px;
+	 margin: 0 auto;
+
+ }
+
+
+
+/* media query 800px above this line */
+.containerTop {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+	align-content: center;
+}
+
+ nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 98%;
+	margin: 30px, 30px;
+}  
+
+nav a {
+	color: grey;
+}
+a:hover {
+	color: blue;
+}
+.logoOne {
+    display: none;
+
+}
+.logoTwo {
+    display: flex;
+}
+
+.containerMid {
+	display: flex;
+	width: 98%;
+	flex-direction: row;
+	margin: 1%;
+	justify-content: flex-start;
+	align-items: center;
+}
+ .text {
+	display: flex;
+	width: 48%;
+	margin: 1%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+} 
+h1 {
+	font-size: 75px;
+	margin: 5%;
+}
+.upperImage {
+	margin-top: 100px;
+	
+}
+.largeBold {
+	margin-top: 100px;
+	text-align: center;
+}
+.squareBoxed {
+	border: 2px solid black;
+	display: flex;
+	flex-direction: row;;
+	justify-content: center;
+	width: 30%;
+	text-align: center;
+}
+h3 {
+	font-size: 30px;
+}
+.upperBodyText {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border-top: 2px solid black;
+	font-size: 20px;
+	width: 96%;
+	margin: 2%;
+}
+
+.midImage {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+
+.lowerBody {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border-bottom: 2px solid black;
+	width: 96%;
+	margin: 2%;
+	font-size: 20px;
+}
+footer {
+	text-align: left;
+	margin-top: 10px;
+	font-size: 20px;
+}
+.copyright {
+	display: flex;
+	justify-content: center;
+
+}
+
+@media (max-width: 800px) {
+
+    .everything, .container {
+        width: 0 auto;
+        margin: 2%;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2%;
+    }
+    nav div {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .logo {
+        padding: 5%
+    }
+    .conatainerTop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .upperImage .circle {
+        width: 0;
+        display: none;
+    }
+    .containerMid {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    text {
+        width: 100%;
+    }
+    .squareBoxed {
+        margin: 2em;
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2%;
+    }
+    .entireText {
+        margin: 0 auto;
+        padding: 2%;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    .upperBodyText {
+        border: none;
+    }
+    .upperBodyLeft {
+        padding: 2%;
+    }
+    .upperBodyRight {
+        padding: 2%;
+    }
+    .middle-img {
+        width: 98%;
+    }
+    .lowerBody {
+        border: none;
+    }
+    .lowerBodyLeft {
+        padding: 2%;
+    }
+    .lowerBodyCenter {
+        padding: 2%;
+    }
+    .lowerBodyRight {
+        padding: 2%;
+    }
+    footer {
+        padding: 2%;
+    }
+    address {
+        padding: 2%;
+    }
+    .copyright {
+        margin: 0 auto;
+        padding: 3%;
+    }
+}
+/* index page media query 800px above this line, Below this line is 500px */
+/* index page media query 800px above this line, Below this line is 500px */
+/* index page media query 800px above this line, Below this line is 500px */
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav a {
+        padding: 5%;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid grey;
+    }
+     #contactRef {
+        border-bottom: 1px solid grey;
+    }
+    .squareBoxed {
+        width: 100%;
+        height: auto;
+    }
+    .upperBodyText {
+        flex-direction: column;
+    }
+    .lowerBody {
+        flex-direction: column;
+    }
+}
+
+
+
+/* Underneath is the code for the Services.html page only */
+
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+nav {
+	display: flex;
+
+}
+.logoOne {
+    display: none;
+}
+.topImage {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.services-header-img {
+	width: 100%;
+	margin: 20px;
+}
+.servicesTop {
+	width: 100%;
+	margin: 20px;
+	border-bottom: 2px solid black;
+
+}
+
+#largerText {
+	font-size: 25px;
+}
+
+.internalHeader {
+	text-align: left;
+	margin: 20px;
+}
+.InternalTextServices {
+	text-align: left;
+	margin-bottom: 20px;
+	
+}
+
+.internalText {
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 20px; 
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.containerButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	margin-left: 150px;
+	margin-right: 150px;
+	border: 1px solid black;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	background: white;
+
+}
+
+.textContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 500px;
+	height: 400px;
+	background: #f3f3f3;
+	border: 2px solid black;
+	margin: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
+	font-size: 20px;
+}
+
+.containerTotal {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-bottom: 2px solid black;
+	margin-bottom: 20px;
+
+}
+.learnMore {
+	display: block;
+	width: 100%;
+	padding: 14px 28px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.bottomContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+
+}
+.bottomContainerText {
+	width: 50%;
+	margin-bottom: 50px;
+}
+.bottomContainerImage {
+	width: 50%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.services-info-img {
+	width: 500px;
+}
+.copyrightText {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.veryBottomText {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.list {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.upperUpperBox {
+	text-align: center;
+	margin: 20px;
+	width: 100%;
+}
+.contact h2 {
+	font-size: 20px;
+}
+.upperBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	width: 100%;
+}
+
+.leftBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	height: 400px;
+	margin: 50px;
+	border: 2px solid black;
+	background: #f3f3f3;
+}
+.leftBox h2 {
+	margin-bottom: 50px;
+}
+.leftBox a {
+	margin: 20px;
+}
+
+.rightBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	height: 400px;
+	margin: 50px;
+	border: 2px solid black;
+	background: #f3f3f3;
+}
+.rightBox h2 {
+	margin-bottom: 50px;
+}
+.rightBox a {
+	margin: 20px;
+}
+
+.midContact {
+	display: flex;
+	margin: 20px;
+	padding: 20px;
+}
+
+.contact {
+	font-size: 25px;
+}
+.midContact h6 {
+	font-size: 15px;
+}
+
+@media (max-width: 800px) {
+
+    .everything, .container {
+        width: 0 auto;
+        margin: 2%;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2%;
+    }
+    nav div {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .logoOne {
+        display: flex;
+
+    }
+    .logoTwo {
+        display: none;
+    }
+    .servicesTop {
+        margin: auto;
+        padding: 2%;
+    }
+    .bottomContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .services-info-img {
+        display: none;
+    }
+    .list {
+        padding: 2%;
+        margin: 2%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .topImage {
+        display: none;
+    }
+    .servicesTop {
+        width: 100%;
+        border: none;
+        margin-top: 2%;
+        padding: 0;
+        margin-top: 2%;
+    }
+    #largerText {
+        width: 100%;
+        text-align: center;
+    }
+    .textContainer {
+        flex-direction: column;
+        justify-content: space-around;
+        width: auto;
+        height: auto;
+        background: none;
+        border: none;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        margin: 20px;
+        padding: 2%;
+        font-size: 20px;
+    }
+    .bottomContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+    .bottomContainerText {
+        width: 100%;
+    }
+    .containerTotal {
+        border: none;
+    }
+    .contactRef {
+        border-bottom: 1px solid grey;
+    }
+}
 
