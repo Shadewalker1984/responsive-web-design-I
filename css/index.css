@@ -492,4 +492,70 @@ nav {
 	font-size: 15px;
 }
 
+@media (max-width: 800px) {
+
+    .everything, .container {
+        width: 0 auto;
+        margin: 2%;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2%;
+    }
+    nav div {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .servicesTop {
+        margin: auto;
+        padding: 2%;
+    }
+    .bottomContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .services-info-img {
+        display: none;
+    }
+    .list {
+        padding: 2%;
+        margin: 2%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .topImage {
+        display: none;
+    }
+    .servicesTop {
+        width: 100%;
+        border: none;
+    }
+    .textContainer {
+        flex-direction: column;
+        justify-content: space-around;
+        width: auto;
+        height: auto;
+        background: none;
+        border: none;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        margin: 20px;
+        padding: 2%;
+        font-size: 20px;
+    }
+    .bottomContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+    .bottomContainerText {
+        width: 100%;
+    }
+
+
+}
 
